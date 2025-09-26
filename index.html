@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Главная - Кальянный Лаунж</title>
+ <meta name="description" content="Добро пожаловать в наш уютный кальянный лаунж с разнообразием вкусов и атмосферой">
+ <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="theme-switcher">
+  <button class="theme-switcher__button" id="themeToggle">🌙</button>
+ </div>
+
+ <header class="header">
+  <span class="header__logo">Кальянный Лаунж</span>
+  <nav class="header__nav nav" role="navigation">
+   <ul class="nav__list">
+    <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+    <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+   </ul>
+  </nav>
+ </header>
+
+ <main class="main">
+  <section class="hero">
+   <h1 class="hero__title">Добро пожаловать в Кальянный Лаунж!</h1>
+   <p class="hero__subtitle">Наслаждайтесь разнообразием вкусов и ароматов в уютной атмосфере нашего лаунжа.</p>
+  </section>
+
+  <section class="section" id="services">
+   <h2 class="section__title">Наши кальяны</h2>
+   <p>Наслаждайтесь разнообразием вкусов и ароматов в уютной атмосфере нашего лаунжа.</p>
+   <button class="button" id="openDialog">Связаться с нами</button>
+   <div class="media">
+    <iframe src="https://rutube.ru/play/embed/4b0c0760b64a58a3f14f74c036d9012b/" allow="autoplay" allowfullscreen></iframe>
+   </div>
+  </section>
+
+  <section class="section" id="portfolio">
+   <h2 class="section__title">Наши вкусы</h2>
+   <p>Примеры наших популярных вкусов кальянов...</p>
+  </section>
+
+  <section class="section" id="contacts">
+   <h2 class="section__title">Контактная информация</h2>
+   <p>Наши контакты...</p>
+   <a href="contacts.html" class="nav__link">Подробнее</a>
+  </section>
+ </main>
+
+ <footer class="footer">
+  <p>&copy; 2023 Кальянный Лаунж. Все права защищены.</p>
+  <p>Телефон: +7 (123) 456-78-90</p>
+ </footer>
+
+ <dialog class="modal" id="ageDialog">
+  <h2 class="modal__title">Подтверждение возраста</h2>
+  <p class="modal__content">Вам есть 18 лет?</p>
+  <button class="button" id="ageYes">Да</button>
+  <button class="button button--secondary" id="ageNo">Нет</button>
+ </dialog>
+
+ <dialog class="modal" id="feedbackDialog">
+  <h2 class="modal__title">Обратная связь</h2>
+  <form class="modal__content form" id="myForm">
+   <label class="form__label" for="email">Электронная почта</label>
+   <input class="form__input" type="email" id="email" name="email" required placeholder="example@email.com">
+
+   <label class="form__label" for="phone">Телефон</label>
+   <input class="form__input" type="tel" id="phone" name="phone" required pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" placeholder="+7 (___) ___-__-__">
+
+   <label class="form__label" for="date">Дата</label>
+   <input class="form__input" type="date" id="date" name="date" required>
+
+   <label class="form__label" for="select">Выберите</label>
+   <select class="form__select" id="select" name="select" required>
+    <option value="">Выберите вариант</option>
+    <option value="1">Вариант 1</option>
+    <option value="2">Вариант 2</option>
+   </select>
+
+   <label class="form__label" for="textarea">Текст</label>
+   <textarea class="form__textarea" id="textarea" name="textarea" required placeholder="Введите текст"></textarea>
+
+   <button class="button" type="submit">Отправить</button>
+   <button class="button button--secondary modal__close" type="button" id="closeModal">Закрыть</button>
+  </form>
+ </dialog>
+
+ <script src="main.js"></script>
+</body>
+</html>

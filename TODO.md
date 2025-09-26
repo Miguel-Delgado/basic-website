@@ -1,0 +1,11 @@
+- [x] Add :root design tokens (colors, fonts, spaces, radius, shadows)
+- [x] Rewrite styles.css with BEM classes and tokens
+- [x] Add BEM classes to HTML files (header, nav, main, sections, footer, forms, modals)
+- [x] Add breadcrumbs back to about.html and contacts.html with :target styles
+- [x] Add smooth scroll, states (:hover, :focus-visible, :active, :disabled, :target)
+- [x] Add hero section with gradient overlay
+- [x] Add responsive image (<picture>) in about.html
+- [x] Add video embed (Rutube iframe) in index.html with aspect-ratio
+- [x] Add theme switcher (body.theme-dark)
+- [x] Add SVG icons with currentColor
+- [x] Test in browser and DevTools
