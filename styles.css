@@ -363,4 +363,11 @@ body.theme-dark {
 /* Page specific */
 .page--thanks .main {
   text-align: center;
+  background: var(--color-light-brown);
+  max-width: 400px;
+  margin: var(--space-xl) auto;
+  padding: var(--space-l);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-ocher);
 }
